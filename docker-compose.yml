@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  party_time:
+    # image: 630
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./tmp/subdirectory:/logs
